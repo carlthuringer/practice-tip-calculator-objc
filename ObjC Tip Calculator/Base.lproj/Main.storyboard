@@ -77,7 +77,13 @@
                             <outletCollection property="gestureRecognizers" destination="8Q8-Uy-SqI" appends="YES" id="GyA-XB-umW"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="kbU-Fa-aay"/>
+                    <navigationItem key="navigationItem" id="kbU-Fa-aay">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="GaV-QH-X2J">
+                            <connections>
+                                <action selector="onSettingsButton:" destination="BYZ-38-t0r" id="qtL-63-lTe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billTextField" destination="AOk-Kd-yLA" id="oyd-xE-F4x"/>
                         <outlet property="tipControl" destination="UHj-2K-jtf" id="LHB-b6-0yx"/>
@@ -93,6 +99,20 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="766" y="352"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oOZ-Sv-fJV">
+            <objects>
+                <viewController id="Bpc-gX-v8G" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sdt-l2-kSY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jLm-3r-svl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1338" y="352"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JVY-y7-q4p">

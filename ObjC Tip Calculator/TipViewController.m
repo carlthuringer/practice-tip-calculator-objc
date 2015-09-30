@@ -7,6 +7,7 @@
 //
 
 #import "TipViewController.h"
+#import "SettingsViewController.h"
 
 @interface TipViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *billTextField;
@@ -15,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipControl;
 - (IBAction)onTap:(id)sender;
 - (IBAction)onValueChanged:(id)sender;
+- (IBAction)onSettingsButton:(id)sender;
 
 @end
 
@@ -38,6 +40,10 @@
 
 - (IBAction)onValueChanged:(id)sender {
     [self updateValues];
+}
+
+- (IBAction)onSettingsButton:(id)sender {
+    [self.navigationController pushViewController: [[SettingsViewController alloc] init] animated:YES];
 }
 
 - (void)updateValues {

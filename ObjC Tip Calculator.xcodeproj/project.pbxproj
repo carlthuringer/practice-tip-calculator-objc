@@ -13,6 +13,9 @@
 		C37E8BFA1BBC0DE5002E88F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37E8BF81BBC0DE5002E88F2 /* Main.storyboard */; };
 		C37E8BFC1BBC0DE5002E88F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C37E8BFB1BBC0DE5002E88F2 /* Assets.xcassets */; };
 		C37E8BFF1BBC0DE5002E88F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37E8BFD1BBC0DE5002E88F2 /* LaunchScreen.storyboard */; };
+		C37E8C071BBC1B93002E88F2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C37E8C061BBC1B93002E88F2 /* README.md */; settings = {ASSET_TAGS = (); }; };
+		C37E8C0D1BBC1D28002E88F2 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37E8C0B1BBC1D28002E88F2 /* SettingsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C37E8C0E1BBC1D28002E88F2 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C37E8C0C1BBC1D28002E88F2 /* SettingsViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		C37E8BFB1BBC0DE5002E88F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C37E8BFE1BBC0DE5002E88F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C37E8C001BBC0DE5002E88F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C37E8C061BBC1B93002E88F2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C37E8C0A1BBC1D28002E88F2 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		C37E8C0B1BBC1D28002E88F2 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		C37E8C0C1BBC1D28002E88F2 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +49,7 @@
 		C37E8BE31BBC0DE5002E88F2 = {
 			isa = PBXGroup;
 			children = (
+				C37E8C061BBC1B93002E88F2 /* README.md */,
 				C37E8BEE1BBC0DE5002E88F2 /* ObjC Tip Calculator */,
 				C37E8BED1BBC0DE5002E88F2 /* Products */,
 			);
@@ -58,6 +66,9 @@
 		C37E8BEE1BBC0DE5002E88F2 /* ObjC Tip Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				C37E8C0A1BBC1D28002E88F2 /* SettingsViewController.h */,
+				C37E8C0B1BBC1D28002E88F2 /* SettingsViewController.m */,
+				C37E8C0C1BBC1D28002E88F2 /* SettingsViewController.xib */,
 				C37E8BF21BBC0DE5002E88F2 /* AppDelegate.h */,
 				C37E8BF31BBC0DE5002E88F2 /* AppDelegate.m */,
 				C37E8BF51BBC0DE5002E88F2 /* TipViewController.h */,
@@ -139,6 +150,7 @@
 				C37E8BFF1BBC0DE5002E88F2 /* LaunchScreen.storyboard in Resources */,
 				C37E8BFC1BBC0DE5002E88F2 /* Assets.xcassets in Resources */,
 				C37E8BFA1BBC0DE5002E88F2 /* Main.storyboard in Resources */,
+				C37E8C0E1BBC1D28002E88F2 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +163,8 @@
 			files = (
 				C37E8BF71BBC0DE5002E88F2 /* TipViewController.m in Sources */,
 				C37E8BF41BBC0DE5002E88F2 /* AppDelegate.m in Sources */,
+				C37E8C0D1BBC1D28002E88F2 /* SettingsViewController.m in Sources */,
+				C37E8C071BBC1B93002E88F2 /* README.md in Sources */,
 				C37E8BF11BBC0DE5002E88F2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
