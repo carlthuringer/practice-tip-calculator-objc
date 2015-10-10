@@ -16,7 +16,6 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipControl;
 - (IBAction)onTap:(id)sender;
 - (IBAction)onValueChanged:(id)sender;
-- (IBAction)onSettingsButton:(id)sender;
 
 @end
 
@@ -25,12 +24,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Tip Calculator";
+    [self loadDefaultTip];
     [self updateValues];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self loadDefaultTip];
+    [self updateValues];
 }
 
 - (IBAction)onTap:(id)sender {
@@ -40,10 +45,6 @@
 
 - (IBAction)onValueChanged:(id)sender {
     [self updateValues];
-}
-
-- (IBAction)onSettingsButton:(id)sender {
-    [self.navigationController pushViewController: [[SettingsViewController alloc] init] animated:YES];
 }
 
 - (void)updateValues {
@@ -58,5 +59,11 @@
     // Update the UI
     self.tipLabel.text = [NSString stringWithFormat:@"$%.2f", tipAmount];
     self.totalLabel.text = [NSString stringWithFormat:@"$%.2f", totalAmount];
+}
+
+- (void)loadDefaultTip {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    int defaultTip = [defaults floatForKey:@"defaultTip"];
+    self.tipControl.selectedSegmentIndex = defaultTip;
 }
 @end
